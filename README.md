@@ -1,4 +1,4 @@
-# SPK
+# SPK FINAL PROJECT ARIONO & RAJENDRA - 2022
 Sistem pendukung keputusan dengan metode Topsis &amp; SAW.
 
  1. Buat database
