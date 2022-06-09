@@ -56,7 +56,7 @@
 					<div class="media">
 						<img src="stylesheets/new/assets/img/90x90.jpg" class="img-fluid mr-2" alt="admin-profile">
 						<div class="media-body align-self-center">
-				
+
 							<?php $user_role = get_role(); ?>
 							<?php
 							if ($user_role == 'admin') { ?>
@@ -69,8 +69,8 @@
 
 							<?php } else { ?>
 								<h6 class="mb-1">Login First</h6>
-							<p class="mb-0">Click Here</p>
-							
+								<p class="mb-0">Click Here</p>
+
 							<?php } ?>
 
 						</div>
