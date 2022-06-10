@@ -75,6 +75,7 @@ require_once('template-parts/header.php');
 
                                 </tbody>
                             </table>
+                        <?php endif; ?>
                 </div>
                 <div class="pagination-section">
                     <ul class="pagination pagination-style-1 pagination-rounded justify-content-end mt-3 mb-3">
@@ -87,7 +88,7 @@ require_once('template-parts/header.php');
                         <li><a href="javascript:void(0);">»</a></li>
                     </ul>
                 </div>
-            <?php endif; ?>
+
             </div>
         </div>
     </div>
