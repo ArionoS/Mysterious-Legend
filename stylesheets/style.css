@@ -85,7 +85,7 @@ table {
 }
 
 a {
-    color: #74c056;
+    color: #dae6d5;
     text-decoration: none
 }
 
@@ -104,7 +104,7 @@ a {
 }
 
 body {
-    background: #74c056;
+    background: #fff;
     font-family: "PT Sans", sans-serif;
     color: #727272;
     font-size: 14px;
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pure-table tr.super-top th {
-    background: #519133;
+    background: #333591;
     color: #fff;
     text-align: center;
     vertical-align: middle;
@@ -246,11 +246,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pure-table tr.super-top th.super-top-left {
-    background: #1e410d
+    background: #390370
 }
 
 .pure-table th.super-top-left {
-    background: #1e410d
+    background: #390370
 }
 
 .pure-table td:first-child, .pure-table th:first-child {
@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pure-table thead {
-    background-color: #74c056;
+    background-color: #5682c0;
     color: #fff;
     text-align: left;
     vertical-align: bottom
