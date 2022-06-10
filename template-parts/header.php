@@ -23,6 +23,8 @@
 	<link href="stylesheets/new/assets/css/default-dashboard/style.css" rel="stylesheet" type="text/css" />
 	<!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
+	<link rel="stylesheet" href="stylesheets/style.css">
+
 </head>
 
 <body class="default-sidebar">
