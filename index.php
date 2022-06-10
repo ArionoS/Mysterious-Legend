@@ -30,49 +30,51 @@ require_once('template-parts/header.php');
 
                     if ($query->rowCount() > 0) :
                     ?>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                   
-                                    <th>ID</th>
-                                    <th>Username</th>
-                                 
-                                    <th>Role</th>
-                                    <th>Email</th>
-                                    <th>Password</th>
-                                    <th>Edit</th>
-                                    <th>Hapus</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php while ($hasil = $query->fetch()) : ?>
+                        <?php $user_role = get_role(); ?>
+                        <?php if ($user_role == 'admin') : ?>
+                            <table class="table">
+                                <thead>
                                     <tr>
-                                        <td><?php echo $hasil['id_user']; ?></td>
-                                        <td><?php echo $hasil['username']; ?></td>
-                                        <td><?php echo $hasil['nama']; ?></td>
-                                        <td>
-                                            <?php
-                                            if ($hasil['role'] == 1) {
-                                                echo 'Administrator';
-                                            } elseif ($hasil['role'] == 2) {
-                                                echo 'Petugas';
-                                            }
-                                            ?>
-                                        </td>
-                                        <td><?php echo $hasil['email']; ?></td>
-                                        <td><?php echo $hasil['password']; ?></td>
-                                        <td><a href="edit-user.php?id=<?php echo $hasil['id_user']; ?>"><span class="fa fa-pencil"></span> Edit</a></td>
-                                        <td><a href="hapus-user.php?id=<?php echo $hasil['id_user']; ?>" class="red yaqin-hapus"><span class="fa fa-times"></span> Hapus</a></td>
+
+                                        <th>ID</th>
+                                        <th>Username</th>
+
+                                        <th>Role</th>
+                                        <th>Email</th>
+                                        <th>Password</th>
+                                        <th>Edit</th>
+                                        <th>Hapus</th>
                                     </tr>
-                                <?php endwhile; ?>
-                            <?php else : ?>
-                                <p>Maaf, belum ada data untuk user.</p>
-                            <?php endif; ?>
+                                </thead>
+                                <tbody>
+                                    <?php while ($hasil = $query->fetch()) : ?>
+                                        <tr>
+                                            <td><?php echo $hasil['id_user']; ?></td>
+                                            <td><?php echo $hasil['username']; ?></td>
+                                            <td><?php echo $hasil['nama']; ?></td>
+                                            <td>
+                                                <?php
+                                                if ($hasil['role'] == 1) {
+                                                    echo 'Administrator';
+                                                } elseif ($hasil['role'] == 2) {
+                                                    echo 'Petugas';
+                                                }
+                                                ?>
+                                            </td>
+                                            <td><?php echo $hasil['email']; ?></td>
+                                            <td><?php echo $hasil['password']; ?></td>
+                                            <td><a href="edit-user.php?id=<?php echo $hasil['id_user']; ?>"><span class="fa fa-pencil"></span> Edit</a></td>
+                                            <td><a href="hapus-user.php?id=<?php echo $hasil['id_user']; ?>" class="red yaqin-hapus"><span class="fa fa-times"></span> Hapus</a></td>
+                                        </tr>
+                                    <?php endwhile; ?>
+                                <?php else : ?>
+                                    <p>Maaf, belum ada data yang ditampilkan.</p>
+                                <?php endif; ?>
 
 
 
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
                 </div>
                 <div class="pagination-section">
                     <ul class="pagination pagination-style-1 pagination-rounded justify-content-end mt-3 mb-3">
@@ -85,6 +87,7 @@ require_once('template-parts/header.php');
                         <li><a href="javascript:void(0);">»</a></li>
                     </ul>
                 </div>
+            <?php endif; ?>
             </div>
         </div>
     </div>
