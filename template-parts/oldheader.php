@@ -48,10 +48,10 @@
 								</li>
 							<?php endif; ?>
 							<?php if ($user_role == 'admin' || $user_role == 'petugas') : ?>
-								<li><a href="list-kambing.php">Pegawai</a>
+								<li><a href="list-karyawan.php">Pegawai</a>
 									<ul>
-										<li><a href="list-kambing.php">List Pegawai</a></li>
-										<li><a href="tambah-kambing.php">Tambah Pegawai</a></li>
+										<li><a href="list-karyawan.php">List Pegawai</a></li>
+										<li><a href="tambah-karyawan.php">Tambah Pegawai</a></li>
 									</ul>
 								</li>
 							<?php endif; ?>

@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     font-size: 1em;
     vertical-align: top;
-    color: #74c056
+    color: #e9ebf4
 }
 
 .the-content blockquote, .the-content table, .the-content p, .the-content ul, .the-content ol, .the-content dd, .the-content pre, .the-content iframe, .the-content .flxmap-container, .the-content hr {
@@ -3513,7 +3513,7 @@ span.red, a.red, .the-content span.red, .the-content a.red {
 }
 
 .the-content .button, .button {
-    background: #74c056;
+    background: #5686c0;
     color: #fff;
     display: inline-block;
     font-size: 16px;
@@ -3527,7 +3527,7 @@ span.red, a.red, .the-content span.red, .the-content a.red {
 }
 
 .the-content .button:hover, .button:hover {
-    background: #519133
+    background: #383391
 }
 
 .the-content .button-red, .button-red {
@@ -3581,7 +3581,7 @@ span.red, a.red, .the-content span.red, .the-content a.red {
 }
 
 #nav .sf-menu li ul {
-    background: #5e8e47;
+    background: #58478e;
     width: 180px;
     padding: 4px 0
 }
@@ -3607,7 +3607,7 @@ span.red, a.red, .the-content span.red, .the-content a.red {
 
 #header-content .button {
     background: #fff;
-    color: #74c056;
+    color: #5f56c0;
     padding: 5px 15px 7px
 }
 
@@ -3650,7 +3650,7 @@ span.red, a.red, .the-content span.red, .the-content a.red {
 }
 
 .msg-box {
-    background: #74c056;
+    background: #dee1dc;
     color: #fff;
     border-radius: 5px;
     padding: 10px 10px;
@@ -3685,12 +3685,12 @@ span.red, a.red, .the-content span.red, .the-content a.red {
 
 .widget li a {
     display: block;
-    border-bottom: 1px solid #74c056;
+    border-bottom: 1px solid #5664c0;
     padding: 10px 2px 5px
 }
 
 #footer {
-    background: #74c056;
+    background: #6456c0;
     color: #ffffff;
     padding: 10px 0;
     text-align: right

@@ -42,7 +42,7 @@ if(isset($_POST['submit'])):
 			endforeach;
 		endif;
 		
-		redirect_to('list-kambing.php?status=sukses-baru');		
+		redirect_to('list-karyawan.php?status=sukses-baru');		
 		
 	endif;
 
@@ -57,7 +57,7 @@ require_once('template-parts/header.php');
 	<div class="main-content-row">
 	<div class="container clearfix">
 	
-		<?php include_once('template-parts/sidebar-kambing.php'); ?>
+		<?php include_once('template-parts/sidebar-karyawan.php'); ?>
 	
 		<div class="main-content the-content">
 			<h1>Tambah Pegawai</h1>
@@ -76,7 +76,7 @@ require_once('template-parts/header.php');
 			<?php endif; ?>			
 			
 			
-				<form action="tambah-kambing.php" method="post">
+				<form action="tambah-karyawan.php" method="post">
 					<div class="field-wrap clearfix">					
 						<label>Nomor Kalung <span class="red">*</span></label>
 						<input type="text" name="no_kalung" value="<?php echo $no_kalung; ?>">

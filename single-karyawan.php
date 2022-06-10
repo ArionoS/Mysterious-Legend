@@ -27,7 +27,7 @@ require_once('template-parts/header.php');
 	<div class="main-content-row">
 	<div class="container clearfix">
 	
-		<?php include_once('template-parts/sidebar-kambing.php'); ?>
+		<?php include_once('template-parts/sidebar-karyawan.php'); ?>
 	
 		<div class="main-content the-content">
 			<h1><?php echo $judul_page; ?></h1>
@@ -82,7 +82,7 @@ require_once('template-parts/header.php');
 				endif;
 				?>
 
-				<p><a href="edit-kambing.php?id=<?php echo $id_kambing; ?>" class="button"><span class="fa fa-pencil"></span> Edit</a> &nbsp; <a href="hapus-kambing.php?id=<?php echo $id_kambing; ?>" class="button button-red yaqin-hapus"><span class="fa fa-times"></span> Hapus</a></p>
+				<p><a href="edit-karyawan.php?id=<?php echo $id_kambing; ?>" class="button"><span class="fa fa-pencil"></span> Edit</a> &nbsp; <a href="hapus-karyawan.php?id=<?php echo $id_kambing; ?>" class="button button-red yaqin-hapus"><span class="fa fa-times"></span> Hapus</a></p>
 			
 			<?php endif; ?>			
 			

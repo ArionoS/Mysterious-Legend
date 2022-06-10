@@ -9,7 +9,7 @@ require_once('template-parts/header.php');
 	<div class="main-content-row">
 	<div class="container clearfix">
 	
-		<?php include_once('template-parts/sidebar-kambing.php'); ?>
+		<?php include_once('template-parts/sidebar-karyawan.php'); ?>
 	
 		<div class="main-content the-content">
 			
@@ -61,9 +61,9 @@ require_once('template-parts/header.php');
 						<tr>
 							<td><?php echo $hasil['no_kalung']; ?></td>							
 							<td><?php echo $hasil['ciri_khas']; ?></td>							
-							<td><a href="single-kambing.php?id=<?php echo $hasil['id_kambing']; ?>"><span class="fa fa-eye"></span> Detail</a></td>
-							<td><a href="edit-kambing.php?id=<?php echo $hasil['id_kambing']; ?>"><span class="fa fa-pencil"></span> Edit</a></td>
-							<td><a href="hapus-kambing.php?id=<?php echo $hasil['id_kambing']; ?>" class="red yaqin-hapus"><span class="fa fa-times"></span> Hapus</a></td>
+							<td><a href="single-karyawan.php?id=<?php echo $hasil['id_kambing']; ?>"><span class="fa fa-eye"></span> Detail</a></td>
+							<td><a href="edit-karyawan.php?id=<?php echo $hasil['id_kambing']; ?>"><span class="fa fa-pencil"></span> Edit</a></td>
+							<td><a href="hapus-karyawan.php?id=<?php echo $hasil['id_kambing']; ?>" class="red yaqin-hapus"><span class="fa fa-times"></span> Hapus</a></td>
 						</tr>
 					<?php endwhile; ?>
 				</tbody>

@@ -208,10 +208,10 @@
 
 									<ul class="collapse list-unstyled sub-submenu show" id="">
 										<li class="active">
-											<a href="list-kambing.php"> List Pegawai </a>
+											<a href="list-karyawan.php"> List Pegawai </a>
 										</li>
 										<li>
-											<a href="tambah-kambing.php"> Tambah Pegawai </a>
+											<a href="tambah-karyawan.php"> Tambah Pegawai </a>
 										</li>
 
 									</ul>

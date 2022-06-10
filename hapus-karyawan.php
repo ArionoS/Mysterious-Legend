@@ -26,7 +26,7 @@ if(!$id_kambing) {
 		$handle->execute(array(
 			'id_kambing' => $result['id_kambing']
 		));
-		redirect_to('list-kambing.php?status=sukses-hapus');
+		redirect_to('list-karyawan.php?status=sukses-hapus');
 		
 	}
 }
@@ -40,7 +40,7 @@ require_once('template-parts/header.php');
 	<div class="main-content-row">
 	<div class="container clearfix">
 	
-		<?php include_once('template-parts/sidebar-kambing.php'); ?>
+		<?php include_once('template-parts/sidebar-karyawan.php'); ?>
 	
 		<div class="main-content the-content">
 			<h1><?php echo $judul_page; ?></h1>
