@@ -27,7 +27,7 @@
 
 </head>
 
-<body class="default-sidebar">
+<body class="default-sidebar" style="background:#fff;">
 
 	<!--  BEGIN NAVBAR  -->
 	<header class="desktop-nav header navbar fixed-top">
