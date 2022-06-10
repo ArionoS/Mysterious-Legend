@@ -131,12 +131,10 @@
 			<nav id="topbar">
 				<ul class="list-unstyled menu-categories d-lg-flex justify-content-lg-around mb-0" id="topAccordion">
 
-
-
 					<?php $user_role = get_role(); ?>
 					<?php if ($user_role == 'admin') : ?>
 						<li class="menu">
-							<a href="#dashboardddd" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+							<a href="#user" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
 								<div class="">
 									<i class="flaticon-computer-6"></i>
 									<span>User</span>
@@ -146,10 +144,10 @@
 									<i class="flaticon-down-arrow"></i>
 								</div>
 							</a>
-							<ul class="collapse submenu list-unstyled" id="dashboardddd" data-parent="#topAccordion">
+							<ul class="collapse submenu list-unstyled" id="user" data-parent="#topAccordion">
 								<li>
 
-									<ul class="collapse list-unstyled sub-submenu show" id="dashboardddd">
+									<ul class="collapse list-unstyled sub-submenu show" id="">
 										<li class="active">
 											<a href="list-user.php"> List User </a>
 										</li>
@@ -163,7 +161,7 @@
 						</li>
 
 						<li class="menu">
-							<a href="#dashboarddd" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+							<a href="#kriteria" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
 								<div class="">
 									<i class="flaticon-computer-6"></i>
 									<span>Kriteria</span>
@@ -173,10 +171,10 @@
 									<i class="flaticon-down-arrow"></i>
 								</div>
 							</a>
-							<ul class="collapse submenu list-unstyled" id="dashboarddd" data-parent="#topAccordion">
+							<ul class="collapse submenu list-unstyled" id="kriteria" data-parent="#topAccordion">
 								<li>
 
-									<ul class="collapse list-unstyled sub-submenu show" id="dashboarddd">
+									<ul class="collapse list-unstyled sub-submenu show" id="">
 										<li class="active">
 											<a href="list-kriteria.php"> List Kriteria </a>
 										</li>
@@ -189,11 +187,13 @@
 								</li>
 							</ul>
 						</li>
+
+						
 					<?php endif; ?>
 
 					<?php if ($user_role == 'admin' || $user_role == 'petugas') : ?>
 						<li class="menu">
-							<a href="#dashboardd" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+							<a href="#pegawai" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
 								<div class="">
 									<i class="flaticon-computer-6"></i>
 									<span>Pegawai</span>
@@ -203,10 +203,10 @@
 									<i class="flaticon-down-arrow"></i>
 								</div>
 							</a>
-							<ul class="collapse submenu list-unstyled" id="dashboardd" data-parent="#topAccordion">
+							<ul class="collapse submenu list-unstyled" id="pegawai" data-parent="#topAccordion">
 								<li>
 
-									<ul class="collapse list-unstyled sub-submenu show" id="dashboardd">
+									<ul class="collapse list-unstyled sub-submenu show" id="">
 										<li class="active">
 											<a href="list-kambing.php"> List Pegawai </a>
 										</li>
@@ -221,7 +221,7 @@
 					<?php endif; ?>
 
 					<li class="menu">
-						<a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<a href="#ranking" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
 							<div class="">
 								<i class="flaticon-computer-6"></i>
 								<span>Ranking</span>
@@ -231,10 +231,10 @@
 								<i class="flaticon-down-arrow"></i>
 							</div>
 						</a>
-						<ul class="collapse submenu list-unstyled" id="dashboard" data-parent="#topAccordion">
+						<ul class="collapse submenu list-unstyled" id="ranking" data-parent="#topAccordion">
 							<li>
 
-								<ul class="collapse list-unstyled sub-submenu show" id="dashboards">
+								<ul class="collapse list-unstyled sub-submenu show" id="">
 									<li class="active">
 										<a href="ranking-topsis.php"> Topsis </a>
 									</li>
